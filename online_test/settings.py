@@ -128,5 +128,5 @@ MEDIA_ROOT = BASE_DIR / 'media'
 FILE_UPLOAD_HANDLERS = ("django_excel.ExcelMemoryFileUploadHandler",
                         "django_excel.TemporaryExcelFileUploadHandler")
 
-from whitenoise.django import DjangoWhiteNoise
-application = DjangoWhiteNoise(application)
+# from whitenoise.django import DjangoWhiteNoise
+# application = DjangoWhiteNoise(application)
