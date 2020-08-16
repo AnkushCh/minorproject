@@ -1,0 +1,57 @@
+{% load static %}<!DOCTYPE html>
+<html lang="en"  oncontextmenu="return false;">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    
+    {% block css %}
+    {% endblock css%}
+</head>
+{% block body %}
+<body>
+    
+    {% block content %}
+    <!-- <button onclick="openFullscreen();">Open Video in Fullscreen Mode</button> -->
+    <!-- <form action="" method="POST">
+    {%csrf_token%}
+    {{form}}
+    <input type="submit" name="Upload" />
+    </form> -->
+    <p>hi there hello</p>
+    <button onclick="test()">Go to Test</button>
+    <button><a href="{% url 'upload' %}">Upload</a></button>
+    {% endblock %}
+
+
+    {% block jscript %}
+    <script type="text/JavaScript">
+
+        
+
+        function test() {
+            var myWindow = window.open("http://127.0.0.1:8000/test", "", "toolbar=no,scrollbars=yes,resizable=no,top=0,left=0,width=screen.width,height=screen.height,fullscreen=yes");
+          }
+          function closeWin() {
+            myWindow.close();
+          }
+        //courtesy of BoogieJack.com
+        function killCopy(e){
+        return false
+        }
+        function reEnable(){
+        return true
+        }
+        document.onselectstart=new Function ("return false")
+        if (window.sidebar){
+        document.onmousedown=killCopy
+        document.onclick=reEnable
+        }
+        </script>
+        {% endblock %}
+  
+</body>
+{% endblock %}
+</html>
