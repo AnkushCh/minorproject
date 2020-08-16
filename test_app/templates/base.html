@@ -3,6 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
+    <base href="/">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
@@ -32,7 +33,7 @@
         
 
         function test() {
-            var myWindow = window.open("http://127.0.0.1:8000/test", "", "toolbar=no,scrollbars=yes,resizable=no,top=0,left=0,width=screen.width,height=screen.height,fullscreen=yes");
+            var myWindow = window.open("{% url 'test' %}", "", "toolbar=no,scrollbars=yes,resizable=no,top=0,left=0,width=screen.width,height=screen.height,fullscreen=yes");
           }
           function closeWin() {
             myWindow.close();
