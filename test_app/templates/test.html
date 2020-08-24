@@ -4,7 +4,7 @@
 <link rel='stylesheet' type="text/css" href="{% static 'css/table.css' %}">
 {% endblock css%}
 {% block content %}
-
+<p id="timer"></p>
 <select id='subject' name='subject'>
         {%for i in sub %}
             <option value="{{ i }}" >{{ i }}</option>
@@ -14,7 +14,7 @@
 <h2 id="score"></h2>
 <div id="test"></div>
 <p id="ans"></p>
-<button id="next" class="next_ques">Next</button>
+<button id="next" class="next_ques" onclick="setInterval(myTimer, 1000)">Next</button>
 <button id="ans_button" class="">Ans</button>
 {% endblock %}
 

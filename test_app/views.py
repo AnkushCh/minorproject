@@ -1,6 +1,6 @@
 from django.shortcuts import render,redirect
 import django_excel as excel
-from .forms import Dataform,UploadFileForm
+from .forms import *
 from django.conf import settings
 from django.core.files.storage import FileSystemStorage
 from django.http import JsonResponse
@@ -20,6 +20,20 @@ def home(request):
 def test(request):
     sub = sorted(set(i.subject for i in quiz.objects.all()))
     return render(request,'test.html',{'sub':sub})
+
+def create_test(request):
+    sub = sorted(set(i.subject for i in quiz.objects.all()))
+    return render(request,'create_test.html',{'sub':sub})
+
+def quiz_data(request):
+    subj = request.GET.get('subject')
+    data = quiz.objects.filter(subject=subj)
+    sdata = serialize('json',data)
+    return JsonResponse({'jsdata':sdata})
+
+
+def create_custom_test(request):
+    name = request.GET.get("name")
 
 def rand(sub):
     min_id = quiz.objects.filter(subject=sub).aggregate(min_id=Min('id'))['min_id']

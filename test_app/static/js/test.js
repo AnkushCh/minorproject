@@ -81,3 +81,19 @@ $("#ans_button").click(
     }
 
 )
+
+// var myVar = setInterval(myTimer, 1000);
+var t = 3600
+function myTimer(t) {
+t=t-1;
+    var h = Math.floor(t / 3600);
+    var temp = Math.floor(t % 3600)
+    var m = Math.floor(temp / 60);
+    var s = Math.floor(temp % 60);
+if(t>0){
+  document.getElementById("timer").innerHTML = h+'h '+m+'m '+s+'s'
+  }
+ else{
+ document.getElementById("timer").innerHTML = "Time Up"
+ }
+}

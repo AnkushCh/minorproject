@@ -1,7 +1,7 @@
 from django import forms
 from django.contrib.auth.models import User
 import csv
-
+from .models import test
 class Dataform(forms.Form):
     data_file = forms.FileField()
 
@@ -14,6 +14,8 @@ class Dataform(forms.Form):
         for user in reader:
             print(user)
             User.objects.create_user(username=user['username'],email=user['email'])
+
+
 
 # class Testform(forms.Form):
 #     subject
