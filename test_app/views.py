@@ -10,21 +10,31 @@ from .models import quiz
 import json
 import random
 from django.core.serializers import serialize
-
+from django.contrib.auth.decorators import login_required
 # Create your views here.
-
+@login_required
+def get_user_profile(request):
+    user = User.objects.get(username=request.user.username)
+    return render(request, 'registration/profile.html', {"user":user})
 
 def home(request):
-    return render(request,'base.html')
+    return render(request,'homepage.html')
 
+@login_required
+def dashboard(request):
+    return render(request,'dashboard.html')
+
+@login_required
 def test(request):
     sub = sorted(set(i.subject for i in quiz.objects.all()))
     return render(request,'test.html',{'sub':sub})
 
+@login_required
 def create_test(request):
     sub = sorted(set(i.subject for i in quiz.objects.all()))
     return render(request,'create_test.html',{'sub':sub})
 
+@login_required
 def quiz_data(request):
     subj = request.GET.get('subject')
     data = quiz.objects.filter(subject=subj)
@@ -32,6 +42,7 @@ def quiz_data(request):
     return JsonResponse({'jsdata':sdata})
 
 
+@login_required
 def create_custom_test(request):
     name = request.GET.get("name")
 
@@ -56,12 +67,14 @@ def rand(sub):
     return data  
 
 
+@login_required
 def next_ques(request):
     if request.is_ajax:
         subj = request.GET.get('subject')
         # data=rand(subj)
         return JsonResponse({'data':json.dumps(rand(subj))})
 
+@login_required
 def get_ans(request):
     if request.is_ajax:
         ans = request.GET.get('option')
@@ -73,6 +86,7 @@ def get_ans(request):
         return JsonResponse({'data':json.dumps(data)})
 
 
+@login_required
 def upload(request):
     if request.method == 'POST' and request.FILES['myfile']:
         form = UploadFileForm(request.POST, request.FILES)
@@ -94,6 +108,7 @@ def upload(request):
         # print('not ok')
     return render(request, 'upload_file.html',{'form':form})
 
+@login_required
 def download(request):
     sheet = excel.pe.Sheet([[1, 2],[3, 4]])
     return excel.make_response(sheet, "csv")

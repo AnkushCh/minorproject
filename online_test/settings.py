@@ -130,3 +130,5 @@ FILE_UPLOAD_HANDLERS = ("django_excel.ExcelMemoryFileUploadHandler",
 
 # from whitenoise.django import DjangoWhiteNoise
 # application = DjangoWhiteNoise(application)
+LOGIN_REDIRECT_URL =  '/dashboard'
+LOGOUT_REDIRECT_URL =  '/'

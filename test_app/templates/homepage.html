@@ -1,0 +1,8 @@
+{% extends "base.html" %}
+
+{% block section %}
+<p>hi there hello</p>
+<button onclick="test()">Go to Test</button>
+<button><a href="{% url 'upload' %}">Upload</a></button>
+<button><a href="{% url 'login' %}">Login</a></button>
+{% endblock %}
