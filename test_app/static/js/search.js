@@ -17,9 +17,9 @@ $.ajax({
       for (i = 0; i < instance.length; i++) {
           var fields = instance[i]["fields"];
           $("#select").append(
-              `<label for="${instance[i]["pk"]}" class="check" >
+              `<p><label for="${instance[i]["pk"]}" class="check" >
               <input type="checkbox" name="${instance[i]["pk"]}" id="${instance[i]["pk"]}" />
-              ${fields["qn"]}</label><br>`
+              ${fields["qn"]}</label></p>`
           )
       }
     }
