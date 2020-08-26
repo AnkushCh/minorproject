@@ -10,20 +10,55 @@ from .models import quiz
 import json
 import random
 from django.core.serializers import serialize
+from django.contrib.auth import authenticate, login, logout
 from django.contrib.auth.decorators import login_required
+from django.http import HttpResponse
 # Create your views here.
 @login_required
 def get_user_profile(request):
     user = User.objects.get(username=request.user.username)
     return render(request, 'registration/profile.html', {"user":user})
 
+# def home(request):
+#     return render(request,'homepage.html')
+
 def home(request):
-    return render(request,'homepage.html')
+    return render(request,'index.html')
+
+def login1(request):
+    if request.method == 'POST':
+        username = request.POST['username']
+        password = request.POST['password']
+
+        user = authenticate(username=username, password=password)
+        
+        if user is not None:
+            login(request, user)
+            return render(request,'homepage.html')
+        else:
+            return HttpResponse('no')
+    else:
+        return render(request,'login.html')
+
+def register1(request):
+    if request.method == 'POST':
+        username = request.POST['username']
+        password = request.POST['password']
+        cpassword = request.POST['cpassword']
+
+        if password == cpassword:
+            user = User.objects.create_user(username, '', password)
+            user.save()
+            return HttpResponse('sucess')
+        else:
+            return HttpResponse('KO')
+    else:
+        return render(request, 'register.html')
 
 @login_required
 def dashboard(request):
     return render(request,'dashboard.html')
-
+    
 @login_required
 def test(request):
     sub = sorted(set(i.subject for i in quiz.objects.all()))

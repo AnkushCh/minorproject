@@ -1,0 +1,67 @@
+a {
+    color: black;
+}
+
+section {
+    display: flex
+}
+
+.leftside {
+    width: 30%;
+    height: auto;
+}
+
+.rightside {
+    width: 60%;
+    height: auto;
+    padding-left: 40px;
+}
+
+.rightside1 {
+    width: 60%;
+    height: auto;
+    padding-left: 40px;
+}
+
+.leftside1 {
+    width: 50%;
+    height: auto;
+    padding-right: 10%;
+    padding-left: 10%;
+    margin-top: 5%;
+}
+
+#mt8 {
+    margin-top: 5%;
+}
+
+.mr {
+    margin-left: 14%;
+}
+
+p {
+    font-size: 24px;
+    font-family: "Times New Roman";
+}
+
+h2 {
+    font-size: 40px;
+    font-family: "Arial Black"
+}
+
+.container-fluid {
+    height: 30%;
+}
+
+img {
+    height: 40%;
+}
+
+@media only screen and (max-width: 600px) {
+    p {
+        font-size: 12px;
+    }
+    h2 {
+        font-size: 12px;
+    }
+}
