@@ -1,6 +1,6 @@
 {% extends "base.html" %}
 {% block section %}
 <p>Hi {{ user.get_username  }}</p>
-<button><a href="{% url 'user_profile' %}">Profile</a></button>
-<button><a href="{% url 'logout' %}">Logout</a></button>
+<button class="btn btn-outline-primary rounded-pill pl-4 pr-4 mr-3"><a href="{% url 'user_profile' %}">Profile</a></button>
+<button class="btn btn-outline-primary rounded-pill pl-4 pr-4 mr-3"><a href="{% url 'logout' %}">Logout</a></button>
 {% endblock %}
