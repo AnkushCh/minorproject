@@ -1,0 +1,186 @@
+html {
+    scroll-behavior: smooth;
+}
+
+.white {
+    color: white;
+}
+
+.black {
+    color: black;
+}
+
+h6 {
+    color: rgb(68, 171, 219);
+}
+
+.blue {
+    color: rgb(68, 171, 219);
+}
+
+.first {
+    background-color: black;
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 50% 92%, 0 100%);
+}
+
+.phtmg {
+    margin-top: 20px;
+}
+
+h3 {
+    font-weight: 200;
+}
+
+.ffs {
+    font-family: Brush Script Std;
+}
+
+.ffab {
+    font-family: ArialBlack;
+    font-weight: 700;
+}
+
+.grey {
+    background-color: rgba(247, 240, 240, 0.815);
+}
+
+.phmar {
+    /* margin-top: ; */
+    margin-bottom: 30px;
+    margin-top: 30px;
+}
+
+.bgcolor {
+    background-color: black;
+}
+
+.marginleft {
+    margin-left: 100px;
+}
+
+.linespace {
+    line-height: 38px;
+}
+
+.smico {
+    margin-top: -60px;
+    text-align: center;
+}
+
+.last {
+    background-color: black;
+}
+
+.margintop {
+    top: 100px;
+}
+
+.skill1 {
+    margin-bottom: 70px;
+}
+
+.marginbottom {
+    margin-bottom: 70px;
+}
+
+.progress-bar-dj {
+    background-color: #092e20 !important;
+}
+
+.dj {
+    background-color: #092e20 !important;
+}
+
+.progress-bar-py {
+    background-color: #306998!important;
+}
+
+.py {
+    background-color: #306998!important;
+}
+
+.progress-bar-ai {
+    background-color: #f06529!important;
+}
+
+.ai {
+    background-color: #f06529!important;
+}
+
+.progress-bar-bs {
+    background-color: #602c50!important;
+}
+
+.bs {
+    background-color: #602c50!important;
+}
+
+.progress-bar-ht {
+    background-color: #f06529!important;
+}
+
+.ht {
+    background-color: #f06529!important;
+}
+
+.progress-bar-css {
+    background-color: #2965f1!important;
+}
+
+.css {
+    background-color: #2965f1!important;
+}
+
+.marginbottom-20 {
+    margin-bottom: 20px;
+}
+
+.mr-p {
+    margin-right: 20px;
+    padding-bottom: 20px;
+}
+
+.contact-mt {
+    margin-top: 30px;
+    margin-bottom: 30px
+}
+
+.mar130 {
+    margin-left: 150px;
+    margin-top: 110px
+}
+
+.mgph1 {
+    margin-left: 100px;
+    margin-top: 100px;
+}
+
+.poptext {
+    margin-left: 120px;
+    margin-top: 8px;
+    color: aliceblue;
+}
+
+.uibt {
+    margin-top: 80px;
+}
+
+.sizeimage {
+    margin-top: 70px;
+    width: 420px;
+    height: 460px;
+}
+
+@media only screen and (max-width: 900px) {
+    .linespace {
+        line-height: 25px;
+    }
+    .marginleft {
+        margin-left: 50px;
+    }
+    .sizeimage {
+        margin-top: 80px;
+        width: 360px;
+        height: 460px;
+    }
+}

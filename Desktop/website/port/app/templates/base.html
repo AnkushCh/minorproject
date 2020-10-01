@@ -1,0 +1,57 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'css\style.css' %}">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <title>Document</title>
+</head>
+  {% block body %}
+<body>
+
+
+    <nav class="navbar sticky-top  bgcolor ">
+        <div class="container-fluid dark">
+            <ul class="nav">
+                <a class="navbar-brand" href="/">
+                    <div class="blue ffs"><em>DEEPAK</em>
+                    </div>
+                </a>
+                
+                <a class="nav-link pl-1 blue" href="/template">Templates</a>
+                <a class="nav-link pl-1 blue" href="/illustration">Illustrations</a>
+            </ul>
+            <ul class="nav">
+                <li class="nav-item mr-4">
+                    <button type="button" class="btn btn-info rounded-pill pl-3 pr-3" onclick="location.href='/#contact'">Contact</button>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- -----------------------------NAV END---------------------- -->
+
+    {% block section %}
+        {% endblock %}
+
+    <!-- -----------------------------foooter------------------------- -->
+    <footer class="page-footer font-small last ">
+
+        <!-- Copyright -->
+        <div class="footer-copyright text-center py-3 white ">© 2020 Copyright:
+            <a>deepak</a>
+        </div>
+        <!-- Copyright -->
+
+        <!-- <div class="embed-responsive embed-responsive-16by9 ">
+        <iframe class="embed-responsive-item " src="https://www.youtube.com/embed/oSeWtcdbdlY " allowfullscreen></iframe>
+    </div> -->
+
+    </footer>
+</body>
+{% endblock %}
+
+</html>

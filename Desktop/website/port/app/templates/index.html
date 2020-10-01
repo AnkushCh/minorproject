@@ -1,0 +1,340 @@
+{% load static %}<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'css\style.css' %}">
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <title>Portfolio</title>
+</head>
+
+<body>
+    <nav class="navbar sticky-top  bgcolor animate__animated animate__bounceInDown  ">
+        <div class="container-fluid dark">
+            <ul class="nav">
+                <a class="navbar-brand" href="#home">
+                    <div class="blue ffs"><em>DEEPAK</em>
+                    </div>
+                </a>
+                <a id="nav1" class="nav-link blue " href="#aboutme">About me</a>
+                <a class="nav-link pl-1 blue" href="#skills">Skills</a>
+                <a class="nav-link pl-1 blue" href="/template">Templates</a>
+                <a class="nav-link pl-1 blue" href="/illustration">Illustrations</a>
+            </ul>
+            <ul class="nav">
+                <li class="nav-item mr-4">
+                    <button type="button" class="btn btn-info rounded-pill pl-3 pr-3" onclick="location.href='#contact'">Contact</button>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- -----------------------------NAV END------------------------------------- -->
+    <!-- ----------------------------------- HOME--------------------------------- -->
+
+    <div id="home" class="first animate__animated animate__bounceInDown "><br><br>
+        <div class="container ">
+            <div class="row ">
+                <div class=" col animate__animated animate__fadeInLeft" align="center ">
+                    <img src=".\static\images\deepak.jpg " class="sizeimage" alt=" " >
+                </div>
+                <div class="col mgph1 animate__animated animate__fadeInRight">
+
+
+                    <h6 class="blue ">Deepak kumar yadav</h6>
+
+                    <h1 class="white ">
+                        I'am a </h1>
+
+                    <h1 class="blue ffab ">Web Developer
+                    </h1>
+
+                    <p class="white ">lorem ipsum is a dummy site
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- -----------------------------HOME END---------------------------------------------- -->
+    <!-- ---------------------------------------------ABOUT ME------------------------------ -->
+
+    <div id="aboutme" class="container ">
+        <div class="row">
+            <div class="col" align="center ">
+
+                <img src=".\static\images\deepak.jpg" class="sizeimage " alt=" ">
+
+            </div>
+            <div class="col phmar">
+                <h1 class="ffab" align=" center ">About<span class="blue"> Me </span>
+                </h1>
+
+                <br>
+                <h3 class="marginleft ">
+                    <em>Hi! I am Deepak Kumar Yadav,</em>
+                </h3>
+                <p class="black marginleft linespace ">a web developer focused on crafting great web
+                    <br>experiences. I Love Designing and Coding for web
+                    <br>-sites since the day I started training in
+                    <b>Python
+                            <br>/Django with Sebiz Infotech Pvt Ltd</b>.I found
+                    <br>myself into web design/development from there.
+                    <br> I enjoy creating intuitive and functional websites
+                    <br> & want to learn more.
+                    <br> i am eagarly looking for job responsibility or
+                    <br>internship in thr field of web development & in
+                    <br>related field like Seo ,digital marketing etc </p>
+            </div>
+        </div>
+    </div>
+    <!-- -------------------------ABOUT ME END----------------------------------------------- -->
+    <!-- ---------------------------------------------SKILL---------------------------------- -->
+
+    <div id="skills" class="grey ">
+        <div class="container skill1 " style=" margin-bottom:20px; ">
+            <br><br>
+            <h1 class="blue ffab skilll " align=" center ">Skills
+            </h1>
+            <br><br><br>
+            <div class=" row ">
+                <div class="col ">
+                    <!-- ---COL START-- -->
+                    
+                    <div class="animate__animated animate__fadeInLeft">
+                    <div class="card " style="width: 18rem; ">
+                        <div class="card-body smico ">
+                            <img src=".\static\images\dj.png" alt="... " class="rounded-circle ">
+                            <h5 class="card-title ">Django</h5>
+                            <p class="card-text ">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                           
+                        </div>
+                    </div>
+                    </div>
+                </div>
+                <!-- ---COL END-- -->
+                <!-- ---COL START-- -->
+                <div class="col ">
+                    <div class="card marginbottom animate__animated animate__fadeInLeft " style="width: 18rem; ">
+                        <div class="card-body smico ">
+                            <img src=".\static\images\py.png" alt="... " class="rounded-circle ">
+                            <h5 class="card-title ">Python</h5>
+                            <p class="card-text ">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+
+                            
+                        </div>
+                    </div>
+                </div>
+                <!-- ---COL END-- -->
+                <!-- ---COL START-- -->
+                <div class="col ">
+                    <div class="card marginbottom animate__animated animate__fadeInLeft" style="width: 18rem; ">
+                        <div class="card-body smico ">
+                            <img src=".\static\images\ai.png " alt="... " class="rounded-circle ">
+                            <h5 class="card-title ">Adobe illustrator</h5>
+                            <p class="card-text ">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                            
+                        </div>
+                    </div>
+                </div>
+                <!-- ---COL END-- -->
+                <!-- ---COL START-- -->
+                <div class="col ">
+                    <div class="card marginbottom animate__animated animate__fadeInRight" style="width: 18rem; ">
+                        <div class="card-body smico ">
+                            <img src=".\static\images\bs.png " alt="... " class="rounded-circle ">
+                            <h5 class="card-title ">Bootstrap</h5>
+                            <p class="card-text ">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                           
+                        </div>
+                    </div>
+                </div>
+                <!-- ---COL END-- -->
+                <!-- ---COL START-- -->
+                <div class="col ">
+                    <div class="card marginbottom animate__animated animate__fadeInRight" style="width: 18rem; ">
+                        <div class="card-body smico ">
+                            <img src=".\static\images\css.png " alt="... " class="rounded-circle ">
+                            <h5 class="card-title ">CSS</h5>
+                            <p class="card-text ">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                           
+                        </div>
+                    </div>
+                </div>
+                <!-- ---COL END-- -->
+                <!-- ---COL START-- -->
+                <div class="col ">
+                    <div class="card marginbottom animate__animated animate__fadeInRight" style="width: 18rem; ">
+                        <div class="card-body smico ">
+                            <img src=".\static\images\html.png " alt="... " class="rounded-circle ">
+                            <h5 class="card-title ">Html</h5>
+                            <p class="card-text ">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                            
+                        </div>
+                    </div>
+                </div>
+                <!-- ---COL END-- -->
+            </div>
+        </div>
+
+        <!-- ----------cards over----------------------------------------------------------------------------- -->
+{% comment %} -------------------------------------popover---------------------------------------- {% endcomment %}
+        <div class="container">
+            <div class="row">
+                <div class="col-4 col-lg-3" align="center">Django</div>
+                <div class="col-8 ">
+                    <div class="progress marginbottom-20">
+                        <div class="progress-bar-dj progress-bar-striped progress-bar-animated rounded-pill" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 55%"><p class="poptext" >55%</p></div>
+                    </div>
+                </div>
+                <div class="col-4 col-lg-3" align="center">Python</div>
+                <div class="col-8 ">
+                    <div class="progress marginbottom-20">
+                        <div class="progress-bar-py progress-bar-striped progress-bar-animated rounded-pill" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 50%"><p class="poptext" >50%</p></div>
+                    </div>
+                </div>
+                <div class="col-4 col-lg-3" align="center">Adobe illustrator</div>
+                <div class="col-8 ">
+                    <div class="progress marginbottom-20">
+                        <div class="progress-bar-ai progress-bar-striped progress-bar-animated rounded-pill" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 40%"><p class="poptext">40%</p></div>
+                    </div>
+                </div>
+                <div class="col-4 col-lg-3" align="center">Bootstrap</div>
+                <div class="col-8 ">
+                    <div class="progress marginbottom-20">
+                        <div class="progress-bar-bs progress-bar-striped progress-bar-animated rounded-pill" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 75%"><p class="poptext" >75%</p></div>
+                    </div>
+                </div>
+                <div class="col-4 col-lg-3" align="center">CSS</div>
+                <div class="col-8 ">
+                    <div class="progress marginbottom-20">
+                        <div class="progress-bar-css progress-bar-striped progress-bar-animated rounded-pill" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 65%"><p class="poptext" >65%</p></div>
+                    </div>
+                </div>
+                <div class="col-4 col-lg-3" align="center">Html</div>
+                <div class="col-8 ">
+                    <div class="progress marginbottom-20">
+                        <div class="progress-bar-ht progress-bar-striped progress-bar-animated rounded-pill" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 75%"><p class="poptext" >75%</p></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+{% comment %} -------------------popover------------------------------------------ {% endcomment %}
+
+
+    <!-- ---------------------------------------SKILL END------------------------------------- -->
+
+    <div id="home" class="first animate__animated animate__bounceInDown "> 
+        <div class="container skill1 " style=" margin-bottom:20px; ">
+            <br><br>
+            <h1 class="blue ffab skilll " align=" center ">WORK
+            </h1>
+            <br><br><br>
+            <div class=" row ">
+                <div class="col ">
+                    <!-- ---COL START-- -->
+                    
+                    <div class="animate__animated animate__fadeInLeft">
+                    <div class="card " style="width: 18rem; ">
+                        <div class="card-body smico ">
+                            <img src=".\static\images\dj.png" alt="... " class="rounded-circle ">
+                            <h5 class="card-title ">Websites</h5>
+                            <p class="card-text ">Websites made by me as college project as well as my personel projects</p>
+                            <button href="# " class="shadow btn btn-danger rounded-pill pl-5 pr-5">Project</button>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+                <!-- ---COL END-- -->
+                <!-- ---COL START-- -->
+                <div class="col ">
+                    <div class="card marginbottom animate__animated animate__fadeInLeft " style="width: 18rem; ">
+                        <div class="card-body smico ">
+                            <img src=".\static\images\py.png" alt="... " class="rounded-circle ">
+                            <h5 class="card-title ">Templates</h5>
+                            <p class="card-text ">Templates made with blend of Html CSS bootstrap and illustrations</p>
+
+                            <button href="# " class="shadow btn btn-danger rounded-pill pl-5 pr-5 ">Project</button>
+                        </div>
+                    </div>
+                </div>
+                <!-- ---COL END-- -->
+                <!-- ---COL START-- -->
+                <div class="col ">
+                    <div class="card marginbottom animate__animated animate__fadeInLeft" style="width: 18rem; ">
+                        <div class="card-body smico ">
+                            <img src=".\static\images\ai.png " alt="... " class="rounded-circle ">
+                            <h5 class="card-title ">illustrations</h5>
+                            <p class="card-text ">Illusttrations made by me for fun and interest</p>
+                            <button onclick="location.href='/template'" class="shadow btn btn-danger rounded-pill pl-5 pr-5 ">Project</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ---------------------------------------work end------------------------------------- -->
+    <!-- ---------------------------------------CONTACT------------------------------------- -->
+
+
+    <div id="contact" class=" ">
+        <div class="container">
+            <h1 class="blue ffab skilll contact-mt" align=" center ">Contact
+            </h1>
+            <form method="POST" action="/thankyou">
+            {%csrf_token%}
+                <div class="form-row ">
+                    <div class="col-md-6 ">
+                        <label for="formGroupExampleInput ">Name</label>
+                        <input type="text " name="fname" class="form-control " id="formGroupExampleInput " placeholder="Example input placeholder ">
+                    </div>
+                    <div class="form-group col-md-6 ">
+                        <label for="inputEmail4 ">Email</label>
+                        <input type="email " name="femail" class="form-control " id="inputEmail4 ">
+                    </div>
+
+                </div>
+                <div class="form-group ">
+                    <label for="inputAddress ">Address</label>
+                    <input type="text " name="faddress" class="form-control " id="inputAddress " placeholder="1234 Main St ">
+                </div>
+                <div class="form-group ">
+                    <label for="exampleFormControlTextarea1 ">Message</label>
+                    <textarea class="form-control" name="fmessage" id="exampleFormControlTextarea1 " rows="3 "></textarea>
+                </div>
+                <div align=" center ">
+                    <button type="submit " class="btn btn-info rounded-pill pl-3 pr-3 marginbottom-20">Submit</button>
+                </div>
+        </div>
+    </div>
+
+    <!-- -----------------------------foooter------------------------- -->
+    <footer class="page-footer font-small last ">
+
+        <!-- Copyright -->
+        <div class="footer-copyright text-center py-3 white ">© 2020 Copyright:
+            <a>deepak</a>
+        </div>
+        <!-- Copyright -->
+
+        <!-- <div class="embed-responsive embed-responsive-16by9 ">
+            <iframe class="embed-responsive-item " src="https://www.youtube.com/embed/oSeWtcdbdlY " allowfullscreen></iframe>
+        </div> -->
+
+    </footer>
+</body>
+<script src=" https://code.jquery.com/jquery-3.5.1.slim.min.js " integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj " crossorigin="anonymous "></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js " integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN " crossorigin="anonymous "></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js " integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV " crossorigin="anonymous "></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
+              <script>
+              new WOW().init();
+              </script>
+</html>
+
