@@ -9,6 +9,7 @@ def index(request):
         fmessage= request.POST['fmessage']
         cont = contact(name=fname,email=femail,address=faddress,message=fmessage)
         cont.save()
+        return render(request,'thankyou.html')
     return render(request,'index.html')
 
     
@@ -18,4 +19,6 @@ def template(request):
 
 def illustration(request):
     return render(request,'illustration.html')
+
+
 
